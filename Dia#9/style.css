@@ -96,7 +96,7 @@ body{
     bottom: 7vw;
     animation: uno 6s infinite;
     opacity: 0;
-    animation-delay: 7s;
+    animation-delay: 5s;
 }
 .uno{
     width: 12%;
@@ -126,10 +126,10 @@ body{
 }
 @keyframes dos{
     0%{
-        left: 2; opacity: 0;
+        left: 1; opacity: 0;
     }
     50%{
-        left: 2; opacity: 1;
+        left: 1; opacity: 1;
     }
     100%{
         left: 0; opacity: 0;
@@ -140,18 +140,21 @@ body{
     position: relative;
     left: 42vw;
     bottom: 31vw;
-    animation: tres 3s infinite;
-    animation-delay: 5s;
+    animation-name: tres;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    opacity: 0;
 }
 .tres{
     width: 12%;
 }
 @keyframes tres{
     0%{
-        left: 1; opacity: 0;
+        left: 3; opacity: 1;
     }
     50%{
-        left: 1; opacity: 1;
+        left: 3; opacity: 1;
     }
     100%{
         left: 0; opacity: 0;
