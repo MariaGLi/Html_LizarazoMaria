@@ -23,7 +23,7 @@ body{
 .nube{
     position: relative;
     width: 25%;
-    bottom: -5vh;
+    top: 5vw;
     z-index: 2;
     animation-name: nube;
     animation-duration: 10s;
@@ -66,126 +66,115 @@ body{
 
 .letra{
     position: relative;
-    bottom: -14vw;
-    text-align: center;
-    color: rgb(195, 195, 210);
-    animation: letra 9s infinite;
+    display: grid;
+    justify-content: center;
+    animation-delay: 15s;
+    animation: letra 10s infinite;
+    top: 40vw;
+}
+
+.letrica{
+    border-radius: 2vw;
+    opacity: 70%;
 }
 
 @keyframes letra{
+    0%{
+        top: 40vw
+    }
     60%{
-        top: 70%;
+        top: 40vw
     }
     100%{
-        top: 15%;
+        top: 10vw
     }
 }
 
-.conteo{
-    display: flex;
-    text-align: center;
-    font-size: 5vw;
-    margin-top: -9;
-    color: white;
-    font-weight: bold;
-    animation-duration: 8s;
+.unito{
+    position: relative;
+    left: 42vw;
+    bottom: 7vw;
+    animation: uno 6s infinite;
+    opacity: 0;
     animation-delay: 7s;
-    overflow: hidden;
 }
-
-.conteo .n3{
-    animation-name: n3;
-    animation-duration: 5s;
-    animation-delay: 10s;
-    position: relative;
-    top: 20vh;
-    margin-left: 300%;
+.uno{
+    width: 12%;
 }
-
-.conteo .n2{
-    animation-name: n2;
-    animation-duration: 3s;
-    animation-delay: 10.5s;
-    position: relative;
-    top: 7vh;
-    margin-left: 300%;
-}
-
-.conteo .n1{
-    animation-name: n1;
-    animation-duration: 3s;
-    animation-delay: 15s;
-    position: relative;
-    bottom: 6vh;
-    margin-left: 300%;
-
-}
-.conteo .acc{
-    animation-name: acc;
-    animation-duration: 3s;
-    animation-delay: 18s;
-    position: relative;
-    bottom: 19vh;
-    margin-left: 300%;
-}
-
-@keyframes n3{
+@keyframes uno{
     0%{
-        width: 300%;
+        left: 1; opacity: 0;
     }
-    80%{
-        opacity: 100%;
-        margin-left: 0%;
-        width: 100%;
+    50%{
+        left: 1; opacity: 1;
     }
     100%{
-        opacity: 0%;
-        margin-left: -300%;
+        left: 0; opacity: 0;
     }
-    
 }
-@keyframes n2{
+
+.doscito{
+    position: relative;
+    left: 42vw;
+    bottom: 19vw;
+    animation: dos 5s infinite;
+    opacity: 0;
+    animation-delay: 3s;
+}
+.dos{
+    width: 12%;
+}
+@keyframes dos{
     0%{
-        width: 300%;
+        left: 2; opacity: 0;
     }
-    80%{
-        opacity: 100%;
-        margin-left: 0%;
-        width: 100%;
+    50%{
+        left: 2; opacity: 1;
     }
     100%{
-        opacity: 0%;
-        margin-left: -300%;
+        left: 0; opacity: 0;
     }
-    
 }
-@keyframes n1{
+
+.trescito{
+    position: relative;
+    left: 42vw;
+    bottom: 31vw;
+    animation: tres 3s infinite;
+    animation-delay: 5s;
+}
+.tres{
+    width: 12%;
+}
+@keyframes tres{
     0%{
-        width: 300%;
+        left: 1; opacity: 0;
     }
-    80%{
-        opacity: 100%;
-        margin-left: 0%;
-        width: 100%;
+    50%{
+        left: 1; opacity: 1;
     }
     100%{
-        opacity: 0%;
-        margin-left: -300%;
+        left: 0; opacity: 0;
     }
-    
 }
-@keyframes acc{
+
+.accion{
+    position: relative;
+    width: 25%;
+    left: 35vw;
+    bottom: 42vw;
+    animation: accion 5s ;
+    opacity: 0;
+    animation-delay: 8s;
+}
+@keyframes accion{
     0%{
-        width: 300%;
+        opacity: 1;
     }
-    80%{
-        opacity: 100%;
-        margin-left: 0%;
-        width: 100%;
+    50%{
+        opacity: 1;
     }
     100%{
-        opacity: 0%;
-        margin-right: 100% ;
-        margin-left: -300%;
+        opacity: 0;
     }
 }
