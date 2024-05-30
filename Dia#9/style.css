@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    background-image: url(Imagenes/FaroCatatumbo.jpg);
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;      
+}
+
+.nube{
+    position: relative;
+    width: 25%;
+    bottom: -5vh;
+    z-index: 2;
+    animation-name: nube;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;    
+}
+
+@keyframes nube {
+    0%{
+        left: 100%;
+    }
+    50%{
+        left: 45%;
+    }
+    100%{
+        left: -90%;
+    }
+}
+
+.luna{
+    position: relative;
+    border-radius: 100%;
+    width: 15%;
+    height: auto;
+    bottom: 11.7vw;
+    left: 58vw;
+    animation: luna 10s infinite;
+}
+
+@keyframes luna{
+    0%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+
+.letra{
+    position: relative;
+    bottom: -14vw;
+    text-align: center;
+    color: rgb(195, 195, 210);
+    animation: letra 9s infinite;
+}
+
+@keyframes letra{
+    60%{
+        top: 70%;
+    }
+    100%{
+        top: 15%;
+    }
+}
+
+.conteo{
+    display: flex;
+    text-align: center;
+    font-size: 5vw;
+    margin-top: -9;
+    color: white;
+    font-weight: bold;
+    animation-duration: 8s;
+    animation-delay: 7s;
+    overflow: hidden;
+}
+
+.conteo .n3{
+    animation-name: n3;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    position: relative;
+    top: 20vh;
+    margin-left: 300%;
+}
+
+.conteo .n2{
+    animation-name: n2;
+    animation-duration: 3s;
+    animation-delay: 10.5s;
+    position: relative;
+    top: 7vh;
+    margin-left: 300%;
+}
+
+.conteo .n1{
+    animation-name: n1;
+    animation-duration: 3s;
+    animation-delay: 15s;
+    position: relative;
+    bottom: 6vh;
+    margin-left: 300%;
+
+}
+.conteo .acc{
+    animation-name: acc;
+    animation-duration: 3s;
+    animation-delay: 18s;
+    position: relative;
+    bottom: 19vh;
+    margin-left: 300%;
+}
+
+@keyframes n3{
+    0%{
+        width: 300%;
+    }
+    80%{
+        opacity: 100%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    100%{
+        opacity: 0%;
+        margin-left: -300%;
+    }
+    
+}
+@keyframes n2{
+    0%{
+        width: 300%;
+    }
+    80%{
+        opacity: 100%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    100%{
+        opacity: 0%;
+        margin-left: -300%;
+    }
+    
+}
+@keyframes n1{
+    0%{
+        width: 300%;
+    }
+    80%{
+        opacity: 100%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    100%{
+        opacity: 0%;
+        margin-left: -300%;
+    }
+    
+}
+@keyframes acc{
+    0%{
+        width: 300%;
+    }
+    80%{
+        opacity: 100%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    100%{
+        opacity: 0%;
+        margin-right: 100% ;
+        margin-left: -300%;
+    }
+}
