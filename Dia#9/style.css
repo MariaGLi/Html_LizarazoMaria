@@ -94,7 +94,9 @@ body{
     position: relative;
     left: 42vw;
     bottom: 7vw;
-    animation: uno 6s infinite;
+    animation-name: uno;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
     opacity: 0;
     animation-delay: 5s;
 }
@@ -117,7 +119,9 @@ body{
     position: relative;
     left: 42vw;
     bottom: 19vw;
-    animation: dos 5s infinite;
+    animation-name: dos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     opacity: 0;
     animation-delay: 3s;
 }
@@ -166,7 +170,9 @@ body{
     width: 25%;
     left: 35vw;
     bottom: 42vw;
-    animation: accion 5s ;
+    animation-name: accion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     opacity: 0;
     animation-delay: 8s;
 }
