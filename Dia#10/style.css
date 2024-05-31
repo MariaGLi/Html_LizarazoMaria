@@ -1,5 +1,95 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    width: 100vw;
+    height: 50vw;
+    background-color: #c3c2c6;
+}
+
+.caja{
+    background-color: white;
+    width: 80vw;
+    height: 5vw;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    z-index: 2;
+}
+
+.caja2{
+    background-color: white;
+    width: 20vw;
+    height: 50vw;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.caja3{
+    width: 80vw;
+    height: 45vw;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    z-index: 2;
+}
+
+.img{
+    width: 2vw;
+    position: relative;
+    top: 1.7vw;
+    left: 1.5vw;
+}
+
+.carita{
+    width: 5vw;
+    padding: 0.5vw;
+}
+
+.new{
+    display: flex;
+    align-items: center;
+}
+
+.tit{
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+#hola{
+    display: none;
+}
+
+#hola:checked ~ .caja2{
+    width: 8vw;
+}
+
+#hola:checked ~ .caja{
+    width: 92vw;
+}
+
+#hola:checked ~ .caja3{
+    width: 92vw;
+}
+
+.new2{
+    margin-left: 1.5vw;
+}
+button{
+    width: 17vw;
+    padding: 0.5vw;
+    display: flex;
+    align-items: center;
+    background-color: #1569ee;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+.let{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    color: gray;
 }
